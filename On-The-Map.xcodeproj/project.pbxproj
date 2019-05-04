@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		CE0522C7225F040C009F093C /* usersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0522C6225F040C009F093C /* usersTableViewController.swift */; };
 		CE0522C9225F053E009F093C /* studentsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0522C8225F053E009F093C /* studentsModel.swift */; };
+		CE1567A5227C24C50097667C /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1567A4227C24C50097667C /* UIViewControllerExtension.swift */; };
 		CE603774225909D4006FD4F8 /* UdacityClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE603773225909D4006FD4F8 /* UdacityClient.swift */; };
 		CE603778225911DA006FD4F8 /* loginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE603777225911DA006FD4F8 /* loginResponse.swift */; };
 		CE9990612262CE3B005AAB37 /* usersMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9990602262CE3B005AAB37 /* usersMapViewController.swift */; };
@@ -51,6 +52,7 @@
 /* Begin PBXFileReference section */
 		CE0522C6225F040C009F093C /* usersTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = usersTableViewController.swift; sourceTree = "<group>"; };
 		CE0522C8225F053E009F093C /* studentsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = studentsModel.swift; sourceTree = "<group>"; };
+		CE1567A4227C24C50097667C /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		CE603773225909D4006FD4F8 /* UdacityClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UdacityClient.swift; sourceTree = "<group>"; };
 		CE603777225911DA006FD4F8 /* loginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginResponse.swift; sourceTree = "<group>"; };
 		CE9990602262CE3B005AAB37 /* usersMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = usersMapViewController.swift; sourceTree = "<group>"; };
@@ -132,6 +134,7 @@
 				CEBD15772256FF2F00CB707D /* Main.storyboard */,
 				CEBD157A2256FF4200CB707D /* Assets.xcassets */,
 				CEBD157C2256FF4200CB707D /* LaunchScreen.storyboard */,
+				CE1567A4227C24C50097667C /* UIViewControllerExtension.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -351,6 +354,7 @@
 			files = (
 				CEDE0235225DAEC4006E58B2 /* getUserLocationResponse.swift in Sources */,
 				CE0522C7225F040C009F093C /* usersTableViewController.swift in Sources */,
+				CE1567A5227C24C50097667C /* UIViewControllerExtension.swift in Sources */,
 				CE9990612262CE3B005AAB37 /* usersMapViewController.swift in Sources */,
 				CEDE0233225D9A70006E58B2 /* loginRequest.swift in Sources */,
 				CEBD15762256FF2F00CB707D /* LoginViewController.swift in Sources */,

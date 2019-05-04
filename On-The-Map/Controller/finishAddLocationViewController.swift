@@ -36,7 +36,6 @@ class finishAddLocationViewController: UIViewController {
         parseClient.addLocation(mapString: newStudentInfo.mapString, mediaUrl: newStudentInfo.mediaURL, latitude: newStudentInfo.latitude , longitude: newStudentInfo.longitude, completion: handleAddingResponse(success:error:))
     }
     
-
     func handleAddingResponse(success: Bool, error: Error?) {
         if success{
             if let tabViewController = storyboard!.instantiateViewController(withIdentifier: "tabBarViewController") as? tabBarViewController {

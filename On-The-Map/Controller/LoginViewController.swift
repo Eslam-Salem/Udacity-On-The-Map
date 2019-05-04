@@ -19,7 +19,7 @@ class loginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.hideKeyboardWhenTappedAround()
     }
     
     
@@ -69,13 +69,3 @@ class loginViewController: UIViewController {
 }
 
 
-
-extension UIViewController {
-    
-    func raiseAlertView(withTitle: String, withMessage: String) {
-        
-            let alertController = UIAlertController(title: withTitle, message: withMessage, preferredStyle: .alert)
-             alertController.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-            self.present(alertController, animated: true)
-    }
-}

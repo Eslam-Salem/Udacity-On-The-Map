@@ -7,7 +7,7 @@
 //
 
 import Foundation
-
+// here is the array of student returns from parse api
 class studentsModel {
     
     static var students = [student]()

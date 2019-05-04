@@ -8,6 +8,8 @@
 
 import Foundation
 
+// this class contains all parse api actions
+
 class parseClient {
     
     class func getStudentsLocation(completion: @escaping ([student], Error?) -> Void){

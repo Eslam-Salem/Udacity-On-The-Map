@@ -31,10 +31,7 @@ class usersTableViewController: UIViewController {
         parseClient.getStudentsLocation(completion: handleResponse(students:error:))
     }
     
-
-
     @IBAction func logout (){
-
         UdacityClient.logout {
             DispatchQueue.main.async {
                 let loginVc = self.storyboard!.instantiateViewController(withIdentifier: "loginViewController") as? loginViewController
@@ -43,8 +40,7 @@ class usersTableViewController: UIViewController {
     }
 
 
-func handleResponse(students: [student], error: Error?) {
-    
+    func handleResponse(students: [student], error: Error?) {
         if error != nil{
             raiseAlertView(withTitle: "failure", withMessage: error! .localizedDescription)
             } else {
@@ -108,12 +104,12 @@ extension usersTableViewController: UITableViewDataSource, UITableViewDelegate {
         guard studentLinkk != "" else{
             return
         }
-            let app = UIApplication.shared
+        let app = UIApplication.shared
+        guard  app.canOpenURL(URL(string: studentLinkk)!) == true else {
+            raiseAlertView(withTitle: "invalid URL", withMessage: "it is invalid URL")
+            return
+        }
             app.openURL(URL(string: studentLinkk)!)
-            /*let webScreen = self.storyboard!.instantiateViewController(withIdentifier: "webViewController") as! webViewController
-            webScreen.destination = studentLink
-            navigationController?.pushViewController(webScreen, animated: true)*/
     }
-
 }
 

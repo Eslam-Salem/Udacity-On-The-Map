@@ -15,7 +15,7 @@ class usersMapViewController: UIViewController, MKMapViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        mapView.delegate = self
         getStudentsAnnotations()
     }
     
@@ -94,12 +94,17 @@ class usersMapViewController: UIViewController, MKMapViewDelegate {
     }
 
     func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
+        print ("hi")
         if control == view.rightCalloutAccessoryView {
             let app = UIApplication.shared
-            if let toOpen = view.annotation?.subtitle! {
-    
-                app.openURL(URL(string: toOpen)!)
+            
+            guard let toOpen = view.annotation?.subtitle! else {return}
+            guard  app.canOpenURL(URL(string: toOpen)!) == true else {
+                raiseAlertView(withTitle: "invalid URL", withMessage: "it is invalid URL")
+                return
             }
+            app.openURL(URL(string: toOpen)!)
+
         }
     }
 }

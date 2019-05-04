@@ -9,7 +9,7 @@
 import Foundation
 
 struct newStudentInfo {
-    
+    // here i add new student data to pass it to the db 
     static var uniqueKey : String = UdacityClient.userId
     static var firstName :String = "test"
     static var lastName  :String = "not complete"

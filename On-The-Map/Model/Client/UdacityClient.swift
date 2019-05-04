@@ -8,7 +8,7 @@
 
 import Foundation
 import UIKit
-
+// this class contains all udacity api actions 
 class UdacityClient: UIViewController {
     
     static var sessionId = ""

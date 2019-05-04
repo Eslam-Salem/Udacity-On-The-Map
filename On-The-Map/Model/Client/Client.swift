@@ -8,7 +8,7 @@
 
 import Foundation
 
-
+// this class contains get and post request methods
 
 class client {
     
@@ -78,8 +78,6 @@ class client {
         
         return task
     }
-    
-    
     
     class func taskForPOSTRequest<RequestType: Encodable, ResponseType: Decodable>(url: URL, responseType: ResponseType.Type, udacityApiFlag:Bool, body: RequestType,completion: @escaping (ResponseType?, Error?) -> Void) {
         

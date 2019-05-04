@@ -14,10 +14,13 @@ class addLocationViewController: UIViewController {
     @IBOutlet weak var locationTextField: UITextField!
     @IBOutlet weak var urlTextField: UITextField!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
-    
-    
+
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        locationTextField.delegate = self
+        urlTextField.delegate = self
+        self.hideKeyboardWhenTappedAround()
 
     }
     
@@ -84,5 +87,19 @@ class addLocationViewController: UIViewController {
             }
         }
     }
+}
+
+extension addLocationViewController: UITextFieldDelegate {
+    //**********************TextField Delegate Func*****************************************
+    // what will happen when you click on the text field
+    // first make the textfield clear
+    //second calculate the position od the text field to know if i need to move keyboard or not
+    
+    // if u cliked return in the keyborad save text
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
     
 }
+
