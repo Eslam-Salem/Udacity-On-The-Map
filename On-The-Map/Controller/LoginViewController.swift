@@ -25,6 +25,10 @@ class loginViewController: UIViewController {
     
     @IBAction func loginTapped () {
         
+        guard userNameTextField.text != "" || passwordTextField.text != "" else {
+            raiseAlertView(withTitle: "error", withMessage: "Please Enter Your email and password")
+            return
+        }
         setLoggingIn(true)
         UdacityClient.login(username: userNameTextField.text ?? "", password: passwordTextField.text ?? "", completion: handleLoginResponse(success:error:))
     }
@@ -60,7 +64,8 @@ class loginViewController: UIViewController {
         if loggingIn {
             activityIndicator.startAnimating()
         } else {
-            activityIndicator.stopAnimating()
+            DispatchQueue.main.async {
+                self.activityIndicator.stopAnimating()}
         }
         userNameTextField.isEnabled = !loggingIn
         passwordTextField.isEnabled = !loggingIn
