@@ -10,6 +10,7 @@
 		CE0522C7225F040C009F093C /* usersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0522C6225F040C009F093C /* usersTableViewController.swift */; };
 		CE0522C9225F053E009F093C /* studentsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0522C8225F053E009F093C /* studentsModel.swift */; };
 		CE1567A5227C24C50097667C /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1567A4227C24C50097667C /* UIViewControllerExtension.swift */; };
+		CE1567A7227DCB400097667C /* currentUserResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1567A6227DCB400097667C /* currentUserResponse.swift */; };
 		CE603774225909D4006FD4F8 /* UdacityClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE603773225909D4006FD4F8 /* UdacityClient.swift */; };
 		CE603778225911DA006FD4F8 /* loginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE603777225911DA006FD4F8 /* loginResponse.swift */; };
 		CE9990612262CE3B005AAB37 /* usersMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9990602262CE3B005AAB37 /* usersMapViewController.swift */; };
@@ -53,6 +54,7 @@
 		CE0522C6225F040C009F093C /* usersTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = usersTableViewController.swift; sourceTree = "<group>"; };
 		CE0522C8225F053E009F093C /* studentsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = studentsModel.swift; sourceTree = "<group>"; };
 		CE1567A4227C24C50097667C /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		CE1567A6227DCB400097667C /* currentUserResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = currentUserResponse.swift; sourceTree = "<group>"; };
 		CE603773225909D4006FD4F8 /* UdacityClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UdacityClient.swift; sourceTree = "<group>"; };
 		CE603777225911DA006FD4F8 /* loginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginResponse.swift; sourceTree = "<group>"; };
 		CE9990602262CE3B005AAB37 /* usersMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = usersMapViewController.swift; sourceTree = "<group>"; };
@@ -158,6 +160,7 @@
 				CE603777225911DA006FD4F8 /* loginResponse.swift */,
 				CEDE0234225DAEC4006E58B2 /* getUserLocationResponse.swift */,
 				CE99907322671B1D005AAB37 /* addStudentResponse.swift */,
+				CE1567A6227DCB400097667C /* currentUserResponse.swift */,
 			);
 			path = "Responses Codable";
 			sourceTree = "<group>";
@@ -360,6 +363,7 @@
 				CEBD15762256FF2F00CB707D /* LoginViewController.swift in Sources */,
 				CEDE0231225D8F9A006E58B2 /* Client.swift in Sources */,
 				CE99907422671B1D005AAB37 /* addStudentResponse.swift in Sources */,
+				CE1567A7227DCB400097667C /* currentUserResponse.swift in Sources */,
 				CE999070226703E3005AAB37 /* parseClient.swift in Sources */,
 				CEBD15742256FF2F00CB707D /* AppDelegate.swift in Sources */,
 				CE999065226593CF005AAB37 /* addLocationViewController.swift in Sources */,

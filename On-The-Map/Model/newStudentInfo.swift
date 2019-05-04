@@ -11,8 +11,8 @@ import Foundation
 struct newStudentInfo {
     // here i add new student data to pass it to the db 
     static var uniqueKey : String = UdacityClient.userId
-    static var firstName :String = "test"
-    static var lastName  :String = "not complete"
+    static var firstName :String = "no First Name"
+    static var lastName  :String = "No last NAme"
     static var latitude :Double = 0.0
     static var longitude :Double = 0.0
     static var mapString : String = ""

@@ -43,6 +43,8 @@ class loginViewController: UIViewController {
         if success{
             
             self.performSegue(withIdentifier: "loggedIn", sender: nil)
+            UdacityClient.getStudentsLocation()
+
         } else {
             guard let error = error else {
                 return

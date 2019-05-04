@@ -33,7 +33,7 @@ class finishAddLocationViewController: UIViewController {
     
     @IBAction func finish (){
         
-        parseClient.addLocation(mapString: newStudentInfo.mapString, mediaUrl: newStudentInfo.mediaURL, latitude: newStudentInfo.latitude , longitude: newStudentInfo.longitude, completion: handleAddingResponse(success:error:))
+        parseClient.addLocation(firstName: newStudentInfo.firstName, lastName: newStudentInfo.lastName ,mapString: newStudentInfo.mapString, mediaUrl: newStudentInfo.mediaURL, latitude: newStudentInfo.latitude , longitude: newStudentInfo.longitude, completion: handleAddingResponse(success:error:))
     }
     
     func handleAddingResponse(success: Bool, error: Error?) {

@@ -53,4 +53,19 @@ class UdacityClient: UIViewController {
         task.resume()
     }
     
+
+    
+    
+    class func getStudentsLocation(){
+        
+        client.taskForGETRequest(url: URL(string: "https://onthemap-api.udacity.com/v1/users/\(userId)")!, responseType: currentUserResponse.self, udacityApiFlag: true) { (responseType, error) in
+            guard let responseType = responseType else {return}
+            
+            guard let firstName = responseType.firstName else {return}
+            newStudentInfo.firstName = firstName
+            guard let lastName = responseType.lastName else {return}
+            newStudentInfo.lastName = lastName
+        }
+    }
+
 }

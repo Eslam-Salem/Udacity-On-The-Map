@@ -24,9 +24,9 @@ class parseClient {
     }
     
     //****************************
-    class func addLocation (mapString: String, mediaUrl: String, latitude: Double, longitude: Double, completion: @escaping (Bool, Error?) -> Void){
+    class func addLocation (firstName: String,lastName: String , mapString: String, mediaUrl: String, latitude: Double, longitude: Double, completion: @escaping (Bool, Error?) -> Void){
         
-        let body = addStudentRequest(latitude: latitude, longitude: longitude, mapString: mapString, mediaURL: mediaUrl)
+        let body = addStudentRequest(firstName: firstName, lastName: lastName, latitude: latitude, longitude: longitude, mapString: mapString, mediaURL: mediaUrl)
         
         client.taskForPOSTRequest(url: URL(string: "https://parse.udacity.com/parse/classes/StudentLocation")!, responseType: addStudentResponse.self, udacityApiFlag: false, body: body) { (responseType, error) in
             if responseType != nil {

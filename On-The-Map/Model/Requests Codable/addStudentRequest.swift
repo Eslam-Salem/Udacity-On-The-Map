@@ -11,8 +11,8 @@ import Foundation
 struct addStudentRequest : Codable{
    
     let uniqueKey : String = UdacityClient.userId
-    let firstName :String = "test"
-    let lastName  :String = "not complete"
+    let firstName :String 
+    let lastName  :String
     let latitude :Double
     let longitude :Double
     let mapString : String
